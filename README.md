@@ -16,11 +16,11 @@ n8n is a workflow automation platform that gives technical teams the flexibility
 
 ## Installation
 
-Install our n8n Fork w instantly with pnpm (requires [Node.js >20.xx](https://nodejs.org/en/)):
+Install our n8n Fork instantly with pnpm (requires [Node.js >20.xx](https://nodejs.org/en/)):
 
 ```
 npm install -g pnpm
-wget https://github.com/dataoffice-ailab/n8n/releases/download/release%2F1.76.2-1/n8n-monorepo-1.77.0.tgz
+wget https://github.com/dataoffice-ailab/n8n/releases/download/release%2F1.77.0-1/n8n-monorepo-1.77.0.tgz
 pnpm install -g $(pwd)/n8n-monorepo-1.77.0.tgz
 ```
 
