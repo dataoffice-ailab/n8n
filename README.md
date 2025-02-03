@@ -14,19 +14,14 @@ n8n is a workflow automation platform that gives technical teams the flexibility
 - **Enterprise-Ready**: Advanced permissions, SSO, and air-gapped deployments
 - **Active Community**: 400+ integrations and 900+ ready-to-use [templates](https://n8n.io/workflows)
 
-## Quick Start
+## Installation
 
-Try n8n instantly with [npx](https://docs.n8n.io/hosting/installation/npm/) (requires [Node.js](https://nodejs.org/en/)):
-
-```
-npx n8n
-```
-
-Or deploy with [Docker](https://docs.n8n.io/hosting/installation/docker/):
+Install our n8n Fork w instantly with pnpm (requires [Node.js >20.xx](https://nodejs.org/en/)):
 
 ```
-docker volume create n8n_data
-docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
+npm install -g pnpm
+wget https://github.com/dataoffice-ailab/n8n/releases/download/release%2F1.76.2-1/n8n-monorepo-1.77.0.tgz
+pnpm install -g $(pwd)/n8n-monorepo-1.77.0.tgz
 ```
 
 Access the editor at http://localhost:5678
