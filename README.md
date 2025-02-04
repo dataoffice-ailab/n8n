@@ -14,6 +14,48 @@ n8n is a workflow automation platform that gives technical teams the flexibility
 - **Enterprise-Ready**: Advanced permissions, SSO, and air-gapped deployments
 - **Active Community**: 400+ integrations and 900+ ready-to-use [templates](https://n8n.io/workflows)
 
+## Pre requisites
+
+to install this n8n version you must have:
+
+1. Install nvm
+```
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+    command -v nvm
+    nvm --version
+```
+2. Install node 
+```
+    nvm install 20
+    nvm use 20
+```
+3. Install pnpm
+```
+    npm install -g pnpm
+    pnpm setup
+    pnpm approve-builds
+
+```
+4. Uninstall previous installations of n8n (remove -g flag if it wasn't installed globally)
+```
+    npm uninstall -g n8n
+    
+```
+or
+```
+    pnpm uninstall -g n8n
+    
+```
+npm install -g pnpm
+wget https://github.com/dataoffice-ailab/n8n/releases/download/release%2F1.77.0-1/n8n-monorepo-1.77.0.tgz
+pnpm install -g $(pwd)/n8n-monorepo-1.77.0.tgz
+```
+
+Access the editor at http://localhost:5678
+
 ## Installation
 
 Install our n8n Fork instantly with pnpm (requires [Node.js >20.xx](https://nodejs.org/en/)):
